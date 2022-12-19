@@ -24,7 +24,7 @@
 
 When you access Jenkins for the first time, you are asked to unlock it using a secret initial admin password. 
 
-<img src="img/unlock.png" width=500></img>
+<img src="img/unlock.png" width=700></img>
 
 > Enter in Terminal:<br> `pbcopbcopy < /Users/{your_username}/.jenkins/secrets/initialAdminPassword` <br>and paste the password
 
@@ -32,7 +32,7 @@ After you will create the first administrator user.
 
 When done, you will be navigated to dashboard:
 
-<img src="img/dashboard.jpg" width=500></img>
+<img src="img/dashboard.jpg" width=700></img>
 
 <br><br>
 
@@ -42,7 +42,7 @@ The reason behind integrating Maven with Jenkins is so that we can execute Maven
 
 Manage Jenkins ➡️ Global Tool Configuration ➡️ Click **Add Maven** ➡️ Uncheck **Install automatically** ➡️ Add a parameter and enter the path. 
 
-<img src="img/mvn.png" width=500></img>
+<img src="img/mvn.png" width=700></img>
 
 <br>
 
@@ -61,12 +61,12 @@ Manage Jenkins ➡️ Global Tool Configuration ➡️ Click **Add Maven** ➡�
 Dashboard ➡️ New Item ➡️ Select **Freestyle Project**
 
 Enter repo url and define branch:
-<img src="img/jenkins1.png" width=500></img>
+<img src="img/jenkins1.png" width=700></img>
 
 Enter the maven_path parameter you created before and your mvn command to run the tests.
 
-<img src="img/jenkins2.png" width=500></img>
+<img src="img/jenkins2.png" width=700></img>
 
 After saving, you can run your tests by clicking the `Build Now` button.
 
-<img src="img/jenkins-build.png" width=500></img>
+<img src="img/jenkins-build.png" width=700></img>
