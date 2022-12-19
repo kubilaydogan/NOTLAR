@@ -18,7 +18,7 @@
 
     -  export PATH=/opt/maven/apache-maven-3.8.6/bin:$PATH
 
-        <img src="img/nano.png" width=300></img>
+        <img src="img/nano.png" width=500></img>
 
     > source ~/.zshrc
 

@@ -6,9 +6,13 @@
 
 ```bash
 echo export "JAVA_HOME=\$(/usr/libexec/java_home)" >> ~/.zshrc
-
-source ~/.zshrc
- 
-echo $JAVA_HOME (to verify path)
 ```
+<img src="img/nano.png" width=500></img>
+
+```bash
+$ source ~/.zshrc
+ 
+$ echo $JAVA_HOME (to verify path)
+```
+
 
