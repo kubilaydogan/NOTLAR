@@ -60,7 +60,7 @@ Manage Jenkins ➡️ Global Tool Configuration ➡️ Click **Add Maven** ➡�
 ----
 Dashboard ➡️ New Item ➡️ Select **Freestyle Project**
 
-Enter repo url and define branch:
+Enter repo url and define branch:<br>
 <img src="img/jenkins1.png" width=700></img>
 
 Enter the maven_path parameter you created before and your mvn command to run the tests.
