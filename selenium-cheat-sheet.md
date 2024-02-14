@@ -62,28 +62,28 @@ Wait<WebDriver> wait = new FluentWait<>(driver)
 ```java
 JavascriptExecutor js = JavascriptExecutor(driver);
 ```
-### ⚠️ Scroll and Click
+#### ⚠️ Scroll and Click
 ```java
 js.executeScript("arguments[0].scrollIntoView(true);", element);
 js.executeScript("arguments[0].click();", element);
 // or
 js.executeScript(“document.getElementByID('...').click();”);
 ```
-### ⚠️ Send text (instead of .sendKeys() )
+#### ⚠️ Send text (instead of .sendKeys() )
 ```java
 js.executeScript("document.getElementById('..').value='myInput';");
 ```
-### ⚠️ Get text using JavascriptExecutor
+#### ⚠️ Get text using JavascriptExecutor
 ```java
 String text = (String) js.executeScript("return document.getElementById('..').value=");
 ```
 
-### ⚠️ Interact with checkbox
+#### ⚠️ Interact with checkbox
 ```java
 js.executeScript(“document.getElementByID(‘element id ’).checked=false;”);
 ```
 
-### ⚠️ Refresh the browser
+#### ⚠️ Refresh the browser
 ```java
 js.executeScript(“location.reload()”);
 ```
@@ -158,19 +158,19 @@ driver.switchTo().defaultContent();    // to main body
 
 <h2 id="windows">Windows / tabs 📌</h2>
 
-### 🍏 Store the ID of the original window
+#### 🍏 Store the ID of the original window
 ```java
 String mainWindow = driver.getWindowHandle();
 ```
-### 🍏 Check the count of windows
+#### 🍏 Check the count of windows
 ```java
 assertTrue(driver.getWindowHandles().size() == 1);
 ```
-### 🍏 Wait for the new window or tab
+#### 🍏 Wait for the new window or tab
 ```java
 wait.until(ExpectedConditions.numberOfElementsToBe(2));
 ```
-### 🍏 Loop through until we find a new window handle
+#### 🍏 Loop through until we find a new window handle
 ```java
 for (String windowHandle : driver.getWindowHandles()) {
     if(!originalWindow.contentEquals(windowHandle)) {
@@ -179,16 +179,16 @@ for (String windowHandle : driver.getWindowHandles()) {
     }
 }
 ```
-### 🍏 Close the tab or window
+#### 🍏 Close the tab or window
 ```java
 driver.close();
 ```
-### 🍏 Switch back to the old tab or window
+#### 🍏 Switch back to the old tab or window
 ```java
 driver.switchTo().window(originalWindow);
 ```
 
-### 🔥 Create new window/tab and switch 🔥
+#### 🔥 Create new window/tab and switch 🔥
 
 > Note: This feature works with Selenium 4 and later versions
 
