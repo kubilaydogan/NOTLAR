@@ -80,12 +80,12 @@ String text = (String) js.executeScript("return document.getElementById('..').va
 
 #### ⚠️ Interact with checkbox
 ```java
-js.executeScript(“document.getElementByID(‘element id ’).checked=false;”);
+js.executeScript(“document.getElementByID('..').checked=false;”);
 ```
 
 #### ⚠️ Refresh the browser
 ```java
-js.executeScript(“location.reload()”);
+js.executeScript("location.reload()");
 ```
 
 <h2 id="alert">Alert 📌</h2>
