@@ -22,14 +22,14 @@
 
 
 
-| <a href=""> Wait </a> | <a href="#JavascriptExecutor">JavascriptExecutor</a> | <a href="#windows">Windows / tabs</a> | 
-|-----------------------|------------------------------------------------------|---------------------------------------|
+| <a href="#wait"> Wait </a> | <a href="#javascriptExecutor">JavascriptExecutor</a> | <a href="#windows">Windows / tabs</a> | 
+|----------------------------|------------------------------------------------------|---------------------------------------|
 
 | <a href="#select">Select Class </a> | <a href="#actions">Actions Class</a>|<a href="#alert">Alert</a>| <a href="#iframes">iframes</a> |
 |-|-| -| -|
 ---
 
-## Wait 📌
+<h2 id="wait">Wait 📌</h2>
 
 ### 🌀`Implicit Wait`
 ```jql
@@ -57,7 +57,7 @@ Wait<WebDriver> wait = new FluentWait<>(driver)
                 .ignoring(NoSuchElementException.class);
 ```
 
-<h2 id="JavascriptExecutor">JavascriptExecutor 📌</h2>
+<h2 id="EavascriptExecutor">JavascriptExecutor 📌</h2>
 
 ```java
 JavascriptExecutor js = JavascriptExecutor(driver);
