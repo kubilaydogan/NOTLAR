@@ -2,16 +2,31 @@
 
 ---
 
-<ul>
-    <li><a href="">Wait</a></li>
-    <li><a href="#JavascriptExecutor">JavascriptExecutor</a></li>
-    <li><a href="#alert">Alert</a></li>
-    <li><a href="#actions">Actions Class</a></li>
-    <li><a href="#select">Select Class </a></li>
-    <li><a href="#iframes">iframes</a></li>
-    <li><a href="#windows">Windows / tabs</a></li>
-</ul>
+[//]: # (<ul>)
 
+[//]: # (    <li><a href="">Wait</a></li>)
+
+[//]: # (    <li><a href="#JavascriptExecutor">JavascriptExecutor</a></li>)
+
+[//]: # (    <li><a href="#alert">Alert</a></li>)
+
+[//]: # (    <li><a href="#actions">Actions Class</a></li>)
+
+[//]: # (    <li><a href="#select">Select Class </a></li>)
+
+[//]: # (    <li><a href="#iframes">iframes</a></li>)
+
+[//]: # (    <li><a href="#windows">Windows / tabs</a></li>)
+
+[//]: # (</ul>)
+
+
+
+| <a href=""> Wait </a> | <a href="#JavascriptExecutor">JavascriptExecutor</a> | <a href="#windows">Windows / tabs</a> | 
+|-----------------------|------------------------------------------------------|---------------------------------------|
+
+| <a href="#select">Select Class </a> | <a href="#actions">Actions Class</a>|<a href="#alert">Alert</a>| <a href="#iframes">iframes</a> |
+|-|-| -| -|
 ---
 
 ## Wait 📌
