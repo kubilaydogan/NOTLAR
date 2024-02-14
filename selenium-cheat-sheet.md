@@ -57,7 +57,7 @@ Wait<WebDriver> wait = new FluentWait<>(driver)
                 .ignoring(NoSuchElementException.class);
 ```
 
-<h2 id="EavascriptExecutor">JavascriptExecutor 📌</h2>
+<h2 id="javascriptExecutor">JavascriptExecutor 📌</h2>
 
 ```java
 JavascriptExecutor js = JavascriptExecutor(driver);
