@@ -1,31 +1,35 @@
-## **Install & Configure Maven**
+## Step-by-Step Guide to Install and Configure Maven on macOS
 
-- First create a directory and download maven into this directory
+### 1. Install Maven
+- **Using Homebrew**:
+  ```sh
+  brew install maven
+  ```
 
-    > mkdir -p /opt/maven<br>
-    > cd /opt/maven
+### 2. Verify Installation
 
-- Download [apache-maven-3.8.6-bin.zip](https://maven.apache.org/download.cgi) and open it. Then
+```sh
+mvn -version
+```
 
-    > cd apache-maven-3.8.6 <br>
-    > pwd
+### 3. Configure Maven
+- **Set Environment Variables**:
+    - Open the `.zshrc` file:
+      ```sh
+      nano ~/.zshrc
+      ```
+    - Add the following lines to set the `M2_HOME` and `MAVEN_HOME` environment variables:
+      ```sh
+      export M2_HOME=/usr/local/Cellar/maven/<version>/libexec
+      export MAVEN_HOME=/usr/local/Cellar/maven/<version>/libexec
+      export PATH=$PATH:$M2_HOME/bin
+      ```
+    - Replace `<version>` with the installed Maven version.
+    - Save and close the file.
 
-    (this is to get the path to maven) and copy the path: `/opt/maven/apache-maven-3.8.6`
 
-- Set the MAVEN_HOME path
+- **Apply the Changes**:
+  ```sh
+  source ~/.zshrc
+  ```
 
-    > nano ~/.zshrc
-
-    -  export PATH=/opt/maven/apache-maven-3.8.6/bin:$PATH
-
-        <img src="img/nano.png" width=500></img>
-
-    > source ~/.zshrc
-
-- Verify with `mvn -v`
-
-    ```
-    Maven home: /opt/maven/apache-maven-3.8.6
-    Java version: 17.0.5, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home
-    ```
-<br><br>
