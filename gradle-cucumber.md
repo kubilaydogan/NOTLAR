@@ -1,4 +1,5 @@
- task cucumberTest(type: JavaExec) {
+```java
+task cucumberTest(type: JavaExec) {
     dependsOn assemble, compileTestJava  // Ensures your code is compiled before running Cucumber tests.
     
     main = "io.cucumber.core.cli.Main"   // This is the main entry point for Cucumber.
@@ -10,3 +11,4 @@
         'src/test/resources/features'   // Path to your feature files.
     ]
 }
+```
